@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero-text h1{
+    font-size: 80px;
+    text-align: center;
+    color: dodgerblue;
+    margin: 65px 0px 20px 0px;
+}
+
+#hero-text h1 span{
+    color: #F5B801;
+    text-shadow: 0px 0px 5px #F5B801;
+}
+
+#hero-text{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#hero-text #hero-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 50px auto;
+}
+
+#hero-text #hero-btns a{
+    text-decoration: none;
+    background-color: #F5B801;
+    color: whitesmoke;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 30px 10px;
+}
+
+#technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0bb1c;
+    width: 100%;
+    height: auto;
+}
+
+#tech img{
+    margin: 10px 40px;
+    width: 50px;
+}
+
+#hero-text #hero-btns a:hover{
+    background-color: dodgerblue;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#container #nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white; 
+    box-shadow: 0px 0px 10px rgba(173, 173, 173, 0.342);
+    position: fixed;
+    z-index: 1;
+}
+
+#nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    margin: auto 60px;
+}
+
+#nav-menu ul li a{
+    text-decoration: none;
+    margin: auto 10px;
+    color: dodgerblue;
+}
+
+#nav-menu ul li a:hover{
+    color: #F5B801;
+    text-shadow: 0px 0px 4px #F5B801;
+}
+
+#nav-menu ul li{
+    list-style: none;
+    font-weight: 500;
+}
+
+#logo img{
+    width: 50px;
+    margin: auto 60px;
+}
+
+#about-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: dodgerblue;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    color: whitesmoke;
+    margin: 50px auto;
+    padding: 50px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.692);
+}
+
+#about-section h1{
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+#about-section #projects{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projects #project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#projects #project img{
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.616);
+}
+#projects #project:hover{
+    transform: translateY(-5px) ;
+    transition: .5s  ease;
+    
+}
+
+#projects #project p{
+    margin: 0px auto;
+    text-align: justify;
+    width: auto;
+}
+
+#projects #project h3{
+    margin: 10px 0px;
+}
+
+#projects #project a{
+    text-decoration: none;
+    background-color: #F5B801;
+    padding: 10px 35px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px 0px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#projects #project a:hover{
+    background-color: #f0bb1c;
+    
+}
+
+#more-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 80px auto;
+}
+
+#more-about #developer img{
+    width: 100%;
+}
+
+#more-about #developer{
+    width: 30%;
+    margin: 20px;
+}
+
+#more-about #more-info{
+    width: 40%;
+    margin: 20px;
+}
+
+#more-about #more-info p{
+    line-height: 30px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    
+}
+
+#footer .ft{
+    width: 100%;
+
+}
+
+#contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+#footer #location{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 20px;
+    color: whitesmoke;
+}
+#contact-form form input, textarea{
+    width: 370px;
+    height: 37px;
+    border: none;
+    box-shadow: 0px 0px 6px black;
+    margin: 6px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
+    border: none;
+    font-size: 15px;
+    padding: 0px 15px;
+}
+
+#contact-form form #input{
+    width: 375px;
+    font-weight: 600px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+}
+
+#contact-form form h2{
+    font-size: 50px;
+    margin: 0px;
+    color: dodgerblue;
+    text-align: center;
+}
+
+#contact-form form textarea{
+    height: 100px;
+    font-size: 15px;
+}
+
+#footer #footer-image img{
+    width: 200px;
+}
+
+#footer #footer-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 20px;
+    color: whitesmoke;
+}
+
+#main-footer{
+    width: 100%;
+    height: auto;
+    background-color: #0e0e0e;
+}
+#main-footer p{
+    text-align: center;
+    padding: 20px 0px;
+    color: whitesmoke;
+    font-size: 14px;
+}
